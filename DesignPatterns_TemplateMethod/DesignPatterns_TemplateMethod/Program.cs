@@ -16,7 +16,7 @@ namespace DesignPatterns_TemplateMethod
         }
     }
 
-    public abstract class PriceCalculator
+    public abstract class BurgerPriceCalculator
     {
         //Template method
         public decimal GetBurgerPrice()
@@ -39,7 +39,7 @@ namespace DesignPatterns_TemplateMethod
 
     }
 
-    public class McDonaldsBurger : PriceCalculator
+    public class McDonaldsBurger : BurgerPriceCalculator
     {
         public override decimal GetMeatPrice()
         {
@@ -52,7 +52,7 @@ namespace DesignPatterns_TemplateMethod
         }
     }
 
-    public class KFCBurger : PriceCalculator
+    public class KFCBurger : BurgerPriceCalculator
     {
         public override decimal GetMeatPrice()
         {
